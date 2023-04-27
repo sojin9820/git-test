@@ -1,41 +1,20 @@
-# Wecode Git Test
-
-해당 레포지토리는 `git test`를 위한 레포지토리입니다.
-
-시험 시간은 총 1시간이며, `git`에 익숙해질 때까지 연습을 하셔도 좋습니다.
-
-교육생분들은 아래 안내에 따라 단계별 과제를 진행해주시기 바랍니다.
-
-<br>
-<br>
-
-## 📍 초기 세팅
-
-1. 터미널을 켜서 desktop 디렉토리로 이동합니다.
-   ```shell
-        $ cd desktop
-    ```
-
-2. `wecode-git-test` 레포지토리를 클론해주세요.
+- `git init`
+    → 새로운 Git 저장소(repository)를 생성할 때 사용하는 Git 명령어 이다. 
+    
+- `git remote add origin <remote repository url>`
+    -> git remote add [alias] [url]을 이용하여 특정 url을 alias로 다룰 수 있도록한다.(alias는 아무렇게나 설정이 가능하다.)(여기서 origin은 별칭을 의미)
+- `git add <file name>`
+    →  작업 디렉터리(working directory) 상의 변경 내용을 스테이징 영역(staging area)에 추가하기 위해서 사용하는 Git 명령어이다.
+    
+- `git commit`
+    → 파일 및 폴더의 추가/변경 사항을 저장소에 기록하기 위해 사용한다.
+    → Git commit이라고 명령어를 치면 여러줄의 메세지를 입력할 수 있으며 Git commit -m이라 하고 ""에 남기고 싶은 메시지를 사용하면 메세지 한 줄이 남는다.
+    
+- `git push origin <branch name>`
+    → 원격 저장소(remote repository)에 코드 변경 분을 업로드하기 위해 사용하는 명령어(여기서 origin은 별칭을 의미)
+    
+- `git pull origin <branch name>`
+   → 원격 저장소에서 변경된 메타데이터 정보를 확인할 뿐만 아니라 최신 데이터를 복사하여 로컬 Git에 가져온다.(여기서 origin은 별칭을 의미)
    
-    ```shell
-        $ git clone https://github.com/wecode-bootcamp-korea/wecode-git-test.git
-    ```
-3. 터미널에서 클론 받은 레포지토리의 디렉토리 경로로 이동 후 remote 연결을 해제해주세요.
-   
-    ```shell
-        $ git remote remove origin
-    ```
-4. 본인 github 페이지로 이동하여 repository를 생성해주세요. repository 이름은 `git-test`로 만들어주세요.
-
-
-5. 이후 아래 이미지처럼 개인 Github에 생성한 레포지토리의 주소를 복사합니다.
-   - 예시 이미지
-   ![스크린샷 2023-03-21 오전 11 13 55](https://user-images.githubusercontent.com/78401083/226503628-aaf7a9fc-139c-470f-ba4a-3250a9b144e3.png)
-
-6. 다시 clone 받은 프로젝트로 돌아와서 방금 생성한 개인 repo와 연결해줍니다.
-   
-    ```shell
-        $ git remote add origin https://github.com/[본인의 github username]/git-test.git
-    ```
-7. 이후 노션 안내에 따라 Test를 진행해주세요.
+- `git merge <branch name>`
+  → 작업했던 브랜치들을 병합할 때 사용할 수 있다.
